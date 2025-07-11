@@ -1,3 +1,7 @@
+# University Practice 2025
+<img width="1919" height="897" alt="image" src="https://github.com/user-attachments/assets/4d09873e-b2cd-47e8-a00a-e96894d7c7f2" />
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
