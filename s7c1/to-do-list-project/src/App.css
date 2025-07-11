@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+
+.todo-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+.input-group, .search-group {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.todo-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.todo-container button {
+  padding: 10px 15px;
+  background-color: #49006b;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 300ms;
+}
+
+.todo-container button:hover {
+  background-color: #8702c5;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th, .task-table td {
+  border: 1px solid #ffffff;
+  padding: 12px;
+  text-align: left;
+}
+
+
+.completed {
+  background-color: #004326 !important;
+}
+.completed button{
+  background-color: #1c003d !important;
+}
+.completed button:hover{
+  background-color: #37007a !important;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  min-width: 40px;
+}
