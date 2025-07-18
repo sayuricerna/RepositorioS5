@@ -1,0 +1,81 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: #fafafa;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+input[type="number"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #4c4caf;
+  border-radius: 8px;
+  width: 100px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+input[type="number"]:focus {
+  border-color: #5745a0;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+    input[type="number"] {
+    width: 90%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+button {
+  background-color: #5c4795;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #7f45a0;
+
+}

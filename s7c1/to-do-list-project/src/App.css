@@ -91,3 +91,69 @@
   padding: 6px 10px;
   min-width: 40px;
 }
+
+
+
+@media (max-width: 768px) {
+  .todo-container h1 {
+    font-size: 2rem;
+  }
+
+  .input-group, .search-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .todo-container input[type="text"] {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .todo-container button {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .task-table th, .task-table td {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .task-table {
+    font-size: 0.8em;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .task-table thead {
+    display: none; 
+  }
+
+  .task-table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .task-table td {
+    border: none;
+    padding: 4px 0;
+  }
+}
